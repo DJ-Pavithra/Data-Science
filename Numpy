@@ -1,0 +1,18 @@
+#Important functions
+1. np.array
+2.type()
+3.shape-(rows,columns)
+4. T - Transpose
+5. dot() - product
+6. random.randomint(range(1,20),how many numbers)
+7.max(),min(),argmin()- min element index,argmax()
+8.unique() or unique(,return_counts=True)
+9.slicing matrix- eg: matrix[2:4,1:4]-> rows, columns
+
+#To find the a element with highest freq:
+import numpy as np
+a = np.array([1, 2, 3, 4, 2, 4, 2])
+b=np.unique(a,return_counts=True)
+idx=np.argmax(b[1])
+element=b[0][idx]
+print(element)
